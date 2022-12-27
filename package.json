@@ -5,6 +5,9 @@
         "build": "vite build"
     },
     "devDependencies": {
+        "@inertiajs/inertia": "^0.11.1",
+        "@inertiajs/inertia-svelte": "^0.8.0",
+        "@sveltejs/vite-plugin-svelte": "^2.0.2",
         "@tailwindcss/forms": "^0.5.2",
         "alpinejs": "^3.4.2",
         "autoprefixer": "^10.4.2",
