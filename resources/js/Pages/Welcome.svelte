@@ -1,5 +1,6 @@
 <script>
     import { Link, page } from "@inertiajs/inertia-svelte";
+    import { route } from '@/utils';
 
     export let canLogin;
     export let canRegister;
@@ -13,7 +14,7 @@
     <div class="fixed top-0 right-0 px-6 py-4 sm:block">
         {#if $page.props.auth.user}
             <Link
-                href={window.route("dashboard")}
+                href={route("dashboard")}
                 class="text-sm text-gray-700 dark:text-gray-500 underline"
             >
                 Dashboard
@@ -21,7 +22,7 @@
         {:else}
             {#if canLogin}
                 <Link
-                    href={window.route("login")}
+                    href={route("login")}
                     class="text-sm text-gray-700 dark:text-gray-500 underline"
                 >
                     Log in
@@ -30,7 +31,7 @@
 
             {#if canRegister}
                 <Link
-                    href={window.route("register")}
+                    href={route("register")}
                     class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline"
                 >
                     Register
