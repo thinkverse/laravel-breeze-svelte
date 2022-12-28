@@ -20,6 +20,9 @@
                         <NavLink href={route('dashboard')} active={route().current('dashboard')}>
                             Dashboard
                         </NavLink>
+                        <NavLink href={route('logout')} method="post">
+                            Logout
+                        </NavLink>
                     </div>
                 </div>
 
